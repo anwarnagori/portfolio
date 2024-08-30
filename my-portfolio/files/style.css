@@ -1,0 +1,686 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#navbar {
+  margin: 25px;
+  margin-left: 100px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  animation: ups 2s alternate;
+}
+
+#navbar .portfolio {
+  font-size: 22px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 2px rgb(84, 137, 187);
+}
+
+#navbar img {
+  width: 0;
+  height: 0;
+}
+
+#navbar .nav {
+  width: 600px;
+  margin-left: 450px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#navbar a {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 2px rgb(70, 74, 77);
+}
+
+#navbar a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.middle {
+  width: 1150px;
+  padding: 80px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.content .text {
+  position: relative;
+  color: rgb(107, 96, 96);
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: 1px 1px 2px #ffc0cb;
+}
+
+.content .text.first-text {
+  color: rgb(255, 255, 255);
+}
+
+.text.second-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-left: 2px solid rgb(255, 255, 255);
+  animation: animate 4s steps(12) infinite;
+}
+
+.content p {
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.info {
+  animation: rights 3s alternate;
+}
+
+.my-pic {
+  animation: lefts 3s alternate;
+}
+
+.my-pic img {
+  border-radius: 50%;
+  animation: img-shadow 3s infinite linear;
+}
+
+.icons {
+  width: 220px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons img {
+  border-radius: 40%;
+}
+
+.icons .github {
+  background-color: rgb(107, 96, 96);
+  filter: drop-shadow(5px 5px 3px rgb(71, 59, 59));
+}
+
+.icons .linkedin {
+  background-color: rgb(45, 151, 200);
+  filter: drop-shadow(5px 5px 3px rgb(7, 62, 87));
+}
+
+.icons .facebook {
+  background-color: rgb(102, 167, 237);
+  filter: drop-shadow(4px 4px 3px rgb(102, 155, 125));
+}
+
+.icons .insta {
+  background-color: rgb(214, 47, 106);
+  filter: drop-shadow(4px 3px 3px rgb(190, 113, 140));
+}
+
+.icons .github:hover {
+  background-color: rgb(51, 51, 54);
+  animation: color-github 6s infinite linear;
+}
+
+.icons .linkedin:hover {
+  background-color: rgb(0, 119, 175);
+  animation: color-linkedin 6s infinite linear;
+}
+
+.icons .facebook:hover {
+  background-color: rgb(102, 167, 237);
+  animation: color-facebook 6s infinite linear;
+}
+
+.icons .insta:hover {
+  background-color: rgb(214, 47, 106);
+  animation: color-insta 6s infinite linear;
+}
+
+.main-about {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.your-img {
+  margin-left: 130px;
+}
+
+.your-img img {
+  border: 8px solid rgb(128, 128, 128);
+  border-radius: 5px 4px 25px;
+  animation: rights 3s alternate;
+}
+
+.about-me {
+  margin-top: -240px;
+  margin-left: 350px;
+  animation: lefts 3s alternate;
+}
+
+.about-me p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#ibody {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+.skill h1 {
+  text-align: center;
+}
+
+h3 {
+  margin: 5px;
+}
+
+h3 .percentage {
+  float: right;
+  font-size: 16px;
+}
+
+.skill {
+  background: #333;
+  width: 600px;
+  margin: 60px auto;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 18px rgba(84, 67, 67, 0.946), 0 10px 10px rgba(133, 97, 97, 0.901);
+  animation: bottoms 2s alternate;
+}
+
+.skill li {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.bar {
+  background: rgb(53, 59, 72);
+  display: block;
+  height: 11px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+  height: 15px;
+  float: left;
+}
+
+.html {
+  width: 95%;
+  background: linear-gradient(135deg, rgb(29, 161, 6)0%, rgb(6, 217, 38)100%);
+  animation: html 3s;
+}
+
+.css {
+  width: 70%;
+  background: linear-gradient(135deg, rgb(62, 146, 154)0%, rgb(102, 145, 161)100%);
+  animation: css 3s;
+}
+
+.bootstarp {
+  width: 90%;
+  background: linear-gradient(135deg, rgb(20, 158, 3)0%, rgb(108, 212, 115)100%);
+  animation: bootstarp 3s;
+}
+
+.javascript {
+  width: 80%;
+  background: linear-gradient(135deg, rgb(249, 249, 53)0%, rgb(228, 253, 4)100%);
+  animation: javascript 3s;
+}
+
+.git {
+  width: 60%;
+  background: linear-gradient(135deg, rgb(58, 1, 118)0%, rgb(63, 50, 249)100%);
+  animation: git 3s;
+}
+
+.netlify {
+  width: 50%;
+  background: linear-gradient(135deg, rgb(118, 1, 1)0%, rgb(211, 29, 9)100%);
+  animation: netlify 3s;
+}
+
+.main-contect {
+  width: 900px;
+  height: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px;
+  background-color: #333;
+  border-radius: 20px;
+  animation: bottoms 3s alternate;
+}
+
+.contects {
+  height: 320px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contects {
+  display: flex;
+}
+
+.contects p {
+  color: #cececece;
+  margin-left: 50px;
+  margin-top: 100px;
+  font-size: 24px;
+  font-family: monospace;
+  text-shadow: rgb(40, 38, 31) 1px 0 20px;
+  animation: rights 3s alternate;
+}
+
+.links-contect {
+  width: 650px;
+  height: 200px;
+  margin-left: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  animation: lefts 3s alternate;
+}
+
+.links-contect a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: rgb(40, 38, 31) 1px 0 20px;
+}
+
+@keyframes change {
+  0% {
+    color: rgb(0, 255, 255, 0.7);
+  }
+
+  25% {
+    color: rgb(127, 255, 212, 0.7);
+  }
+
+  50% {
+    color: rgb(222, 184, 135, 0.7);
+  }
+
+  75% {
+    color: rgb(0, 255, 255, 0.7);
+  }
+
+  100% {
+    color: rgb(0, 255, 255, 0.7);
+  }
+}
+
+@keyframes glow-shadow {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
+  }
+
+  10% {
+    box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.9);
+  }
+
+  20% {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.9);
+  }
+
+  30% {
+    box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.9);
+  }
+
+  40% {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.9);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.9);
+  }
+
+  60% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.9);
+  }
+
+  70% {
+    box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.9);
+  }
+
+  80% {
+    box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.9);
+  }
+
+  90% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes lefts {
+  from {
+    transform: translate(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rights {
+  from {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ups {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottoms {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes img-shadow {
+  0% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  25% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  75% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px 5px rgb(0, 119, 175, 1);
+  }
+}
+
+@keyframes colors {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+  }
+
+  10% {
+    box-shadow: 0 0 20px 5px rgba(255, 251, 0, 0.4);
+  }
+
+  20% {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.4);
+  }
+
+  30% {
+    box-shadow: 0 0 20px 5px rgba(0, 251, 255, 0.4);
+  }
+
+  40% {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(217, 0, 255, 0.4);
+  }
+
+  60% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 20px 5px rgba(255, 128, 0, 0.4);
+  }
+
+  80% {
+    box-shadow: 0 0 20px 5px rgba(16, 129, 18, 0.4);
+  }
+
+  90% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes color-github {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(61, 61, 61, 0.9);
+  }
+
+  25% {
+    box-shadow: 0 0 20px 5px rgba(72, 57, 57, 0.9);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(92, 81, 81, 0.9);
+  }
+
+  75% {
+    box-shadow: 0 0 20px 5px rgba(50, 48, 48, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 5px rgba(61, 61, 61, 0.9);
+  }
+
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes color-linkedin {
+  0% {
+    box-shadow: 0 0 20px 5px rgb(0, 119, 175, 0.9);
+  }
+
+  25% {
+    box-shadow: 0 0 20px 5px rgba(121, 211, 253, 0.9);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(5, 60, 85, 0.9);
+  }
+
+  75% {
+    box-shadow: 0 0 20px 5px rgba(70, 206, 255, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 5px rgb(0, 119, 175, 0.9);
+  }
+}
+
+@keyframes color-facebook {
+  0% {
+    box-shadow: 0 0 20px 5px rgb(6, 113, 225, 0.9);
+  }
+
+  25% {
+    box-shadow: 0 0 20px 5px rgba(11, 61, 86, 0.9);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(91, 123, 139, 0.9);
+  }
+
+  75% {
+    box-shadow: 0 0 20px 5px rgba(143, 200, 229, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 5px rgb(6, 113, 225, 0.9);
+  }
+}
+
+@keyframes color-insta {
+  0% {
+    box-shadow: 0 0 20px 5px rgb(214, 47, 106, 0.9);
+  }
+
+  25% {
+    box-shadow: 0 0 20px 5px rgba(210, 91, 133, 0.9);
+  }
+
+  50% {
+    box-shadow: 0 0 20px 5px rgba(222, 0, 78, 0.9);
+  }
+
+  75% {
+    box-shadow: 0 0 20px 5px rgba(156, 72, 102, 0.9);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 5px rgb(214, 47, 106, 0.9);
+  }
+}
+
+@keyframes animate {
+
+  40%,
+  60% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes bootstarp {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes git {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes netlify {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
